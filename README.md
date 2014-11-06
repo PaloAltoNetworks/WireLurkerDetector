@@ -15,7 +15,7 @@ For details: http://researchcenter.paloaltonetworks.com/2014/11/wirelurker-new-e
 
     wget --no-check-certificate https://raw.githubusercontent.com/PaloAltoNetworks-BD/WireLurkerDetector/master/WireLurkerDetectorOSX.py
 
-or, if you get a "wget: command not found" error, just directly open the link by any browser, then save the page to your home directory. 
+    Or, if you get a "wget: command not found" error, just directly open the link by any browser, then save the page to your home directory. 
 
 3. Run the script in the Terminal: 
 
