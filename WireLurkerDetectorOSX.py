@@ -6,7 +6,7 @@
 
 __copyright__    = 'Copyright (c) 2014, Palo Alto Networks, Inc.'
 __author__       = 'Claud Xiao'
-__version__      = '1.0.0'
+__version__      = '1.1.0'
 
 
 import os
@@ -14,6 +14,7 @@ import sys
 import platform
 import plistlib
 import subprocess
+from os.path import expanduser
 
 
 MALICIOUS_FILES = [
@@ -38,7 +39,9 @@ MALICIOUS_FILES = [
 
 SUSPICIOUS_FILES = [
     '/etc/manpath.d/',
-    '/usr/local/ipcc/'
+    '/usr/local/ipcc/',
+    os.path.join(expanduser('~'), 'Library/Caches/com.maiyadi.appinstaller/'),
+    os.path.join(expanduser('~'), 'Library/Saved Application State/com.maiyadi.appinstaller.savedState/'),
 ]
 
 
@@ -84,6 +87,11 @@ def is_app_infected(root):
         the_script = os.path.join(root, 'Contents', 'Resources', 'start.sh')
         the_pack = os.path.join(root, 'Contents', 'Resources', 'FontMap1.cfg')
         if is_file_hidden(the_script) and is_file_hidden(the_pack):
+            return True
+
+        the_installer = os.path.join(root, 'Contents', 'MacOS', 'appinstaller')
+        the_mal_ipa = os.path.join(root, 'Contents', 'Resources', 'infoplistab')
+        if os.path.isfile(the_installer) and os.path.isfile(the_mal_ipa):
             return True
 
         return False
