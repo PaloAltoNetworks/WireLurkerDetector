@@ -103,10 +103,11 @@ def is_app_infected(root):
 def scan_app():
     infected_apps = []
 
-    for root, __, __ in os.walk('/Applications'):
-        if root.lower().endswith('.app'):
-            if is_app_infected(root):
-                infected_apps.append(root)
+    for target in ['/Applications', expanduser('~/Applications')]:
+        for root, __, __ in os.walk(target):
+            if root.lower().endswith('.app'):
+                if is_app_infected(root):
+                    infected_apps.append(root)
 
     return infected_apps
 
