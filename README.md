@@ -13,7 +13,7 @@ For details: http://researchcenter.paloaltonetworks.com/2014/11/wirelurker-new-e
 
 2. Execute this command to download the script: 
 
-    wget --no-check-certificate https://raw.githubusercontent.com/PaloAltoNetworks-BD/WireLurkerDetector/WireLurkerDetectorOSX.py
+    wget --no-check-certificate https://raw.githubusercontent.com/PaloAltoNetworks-BD/WireLurkerDetector/master/WireLurkerDetectorOSX.py
 
 3. Run the script: 
 
