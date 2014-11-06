@@ -142,7 +142,7 @@ def main():
     else:
         print "[!] WARNING: Your OS X system is highly suspicious of being infected by the WireLurker.\n" \
               "[!] You may need to delete all malicious or suspicious files and/or applications above.\n" \
-              "[!] For more information about the WireLurker, please refer: \n"
+              "[!] For more information about the WireLurker, please refer: \n"\
               "[!] http://researchcenter.paloaltonetworks.com/2014/11/wirelurker-new-era-os-x-ios-malware/"
         return 1
 
