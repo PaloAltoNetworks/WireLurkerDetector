@@ -11,6 +11,7 @@ __version__      = '1.1.0'
 
 import os
 import sys
+import stat
 import platform
 import plistlib
 import subprocess
@@ -59,8 +60,8 @@ def is_file_hidden(f):
     if not os.path.exists(f) or not os.path.isfile(f):
         return False
 
-    if sys.version_info[0] >= 2 and sys.version_info[2] >= 7 and sys.version_info >= 3:
-        return os.stat(f).st_flags.UF_HIDDEN
+    if hasattr(stat, 'UF_HIDDEN'):
+        return os.stat(f).st_flags & stat.UF_HIDDEN
 
     else:
         try:
