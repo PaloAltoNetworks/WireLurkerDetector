@@ -29,5 +29,9 @@ For details of the WireLurker:
 ## For Windows users ##
 We described how to technically detect the Windows variant of WireLurker in this document: [HOWTO-Windows.md](https://github.com/PaloAltoNetworks-BD/WireLurkerDetector/blob/master/HOWTO-Windows.md) . Please take a look at it if you would like to contribute on it.
 
+Here are some Windows detection tools developed by others. Remember to thanks them!
+
+- https://github.com/ltfish/WireLurkerCleaner by ltfish
+
 ## Issues ##
 For any issue on the code and its result, please create a issue here: https://github.com/PaloAltoNetworks-BD/WireLurkerDetector/issues
