@@ -6,7 +6,7 @@
 
 __copyright__    = 'Copyright (c) 2014, Palo Alto Networks, Inc.'
 __author__       = 'Claud Xiao'
-__version__      = '1.1.0'
+__version__      = '1.2.0'
 
 
 import os
@@ -22,7 +22,8 @@ MALICIOUS_FILES = [
     '/Users/Shared/run.sh',
     '/Library/LaunchDaemons/com.apple.machook_damon.plist',
     '/Library/LaunchDaemons/com.apple.globalupdate.plist',
-    '/usr/bin/globalupdate/usr/local/machook/',
+    '/usr/bin/globalupdate',
+    '/usr/local/machook/',
     '/usr/bin/WatchProc',
     '/usr/bin/itunesupdate',
     '/Library/LaunchDaemons/com.apple.watchproc.plist',
