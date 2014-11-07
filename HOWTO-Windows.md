@@ -1,4 +1,4 @@
-How to (technically) detect Windows variant of WireLruker
+How to (technically) detect Windows variant of WireLurker
 ===================
 
 ## Background ##
@@ -6,7 +6,7 @@ This is a document for technical guys.
 
 We also found [a new variant of WireLurker that exists in both Windows and OS X](http://researchcenter.paloaltonetworks.com/2014/11/wirelurker-windows/). While the OS X detection code was updated to cover this variant, we decide to only fully disclose how to technically detect its Windows samples.
 
-We also encourage others in the community write GUI/CLI tools or scripts for the detection. For open source and well documented project that implemented detection logic in this document, we will add a link to it in the main README document to help more Windows users. Please just open an issue or pull request to let us know you. 
+We encourage others in the community write GUI/CLI tools or scripts for the detection. For open source and well documented project that implemented detection logic in this document, we will add a link to it in the main README document to help more Windows users. Please just open an issue or pull request to let us know you. 
 
 This document may be updated if we found more variants on Windows.
 
