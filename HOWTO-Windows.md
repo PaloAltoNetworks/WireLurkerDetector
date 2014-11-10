@@ -25,7 +25,7 @@ This document may be updated if we found more variants on Windows.
 2. You can chose to only scan or to not scan any specific directories with potential false negative.
 
 ## How to clean it? ##
-You can decide to implement malware cleaning funtionaality or not. The only requirement is, if you choose to, please list all files your tool are going to delete and ask for user confirmation before deleting them. 
+You can decide to implement malware cleaning funtionality or not. The only requirement is, if you choose to, please list all files your tool are going to delete and ask for user confirmation before deleting them. 
 
 Basically, deleting these files is enough:
 
