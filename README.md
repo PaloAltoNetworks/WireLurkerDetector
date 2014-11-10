@@ -32,6 +32,7 @@ We described how to technically detect the Windows variant of WireLurker in this
 Here are some Windows detection tools developed by others. Remember to thanks them!
 
 - https://github.com/ltfish/WireLurkerCleaner by ltfish
+- https://github.com/kaustubhsant/WireLurkerDetector by kaustubhsant
 
 ## Issues ##
 For any issue on the code and its result, please create a issue here: https://github.com/PaloAltoNetworks-BD/WireLurkerDetector/issues
