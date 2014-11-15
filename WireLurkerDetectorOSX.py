@@ -73,7 +73,7 @@ def is_file_hidden(f):
             proc.communicate()
             return output.find('hidden') != -1
 
-        except Exception, e:
+        except Exception:
             return False
 
 
